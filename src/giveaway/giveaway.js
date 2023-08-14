@@ -1,6 +1,6 @@
 /**
  * Write a function called determineCouponRecipients()
- *
+ 
  * It is important that you copy the function name exactly
  *  so that the tests will pass
  *
@@ -16,7 +16,9 @@
  */
 
 // YOUR CODE HERE:
-
+function determineCouponRecipients(users, isEligibleForCoupon) {
+  return users.filter(user => isEligibleForCoupon(user));
+}
 // This is the callback function that will be passed to your function.
 // You should not edit this function.
 // This function takes in a single user as an argument.
@@ -29,3 +31,4 @@ module.exports = {
   determineCouponRecipients,
   isEligibleForCoupon,
 };
+
